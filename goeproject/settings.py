@@ -107,6 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
 GEOIP_PATH = os.path.join(BASE_DIR,'geo_ip')
 
 
+
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
