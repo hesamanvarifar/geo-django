@@ -38,7 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'measurements',
+
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -71,7 +74,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'goeproject.wsgi.application'
 
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -100,6 +103,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+GEOIP_PATH = os.path.join(BASE_DIR,'geo_ip')
 
 
 # Internationalization
